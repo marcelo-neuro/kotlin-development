@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CarnavalProject</string>
+    <string name="logo_do_folia_maker">logo do Folia Maker</string>
+    <string name="mostrar_fantasia">Mostrar fantasia</string>
+    <string name="crie_sua_fantasia_para_o">Crie sua fantasia para o</string>
+    <string name="carnaval_2025">Carnaval 2025</string>
+    <string name="digite_o_seu_nome">Digite o seu nome</string>
+    <string name="cor_da_fantasia">Cor da Fantasia</string>
+</resources>
