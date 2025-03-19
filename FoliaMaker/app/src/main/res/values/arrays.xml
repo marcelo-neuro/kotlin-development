@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="tamanhos">
+    <array name="spTamanhos">
         <item>PP</item>
         <item>P</item>
         <item>M</item>
         <item>G</item>
         <item>GG</item>
+    </array>
+
+    <array name="spCores">
+        <item>Rosa</item>
+        <item>Vermelho</item>
+        <item>Laranja</item>
+        <item>Amarelo</item>
+        <item>Verde</item>
+        <item>Azul Claro</item>
+        <item>Azul</item>
+        <item>Lilás</item>
     </array>
 </resources>

@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CarnavalProject"
+rootProject.name = "FoliaGenerator"
 include(":app")

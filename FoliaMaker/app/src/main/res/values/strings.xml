@@ -1,9 +1,19 @@
 <resources>
-    <string name="app_name">CarnavalProject</string>
-    <string name="logo_do_folia_maker">logo do Folia Maker</string>
-    <string name="mostrar_fantasia">Mostrar fantasia</string>
-    <string name="crie_sua_fantasia_para_o">Crie sua fantasia para o</string>
-    <string name="carnaval_2025">Carnaval 2025</string>
-    <string name="digite_o_seu_nome">Digite o seu nome</string>
-    <string name="cor_da_fantasia">Cor da Fantasia</string>
+    <string name="app_name">FoliaGenerator</string>
+    <string name="descLogo">Logo do Folia Maker</string>
+    <string name="btnFantasia">Mostrar Fantasia</string>
+    <string name="titleFino">Crie sua fantasia Para o</string>
+    <string name="titleBold">Carnaval 2025</string>
+    <string name="edNomeHint">Insira seu nome</string>
+    <string name="spTamanhoHint">Selecione o tamanho da sua fantasia</string>
+    <string name="acessorioTv">Escolha seu acessório</string>
+    <string name="cbChapeu">Chapéu</string>
+    <string name="cbMascara">Máscara</string>
+    <string name="cbColar">Colar</string>
+    <string name="spCorFantasia">Selecione a cor da fantasia</string>
+    <string name="rdMaquiagem">Maquiagem</string>
+    <string name="rbMaquiagemSim">Sim</string>
+    <string name="rbMaquiagemNao">Não</string>
+    <string name="txBrilho">Ajuste o brilho da fantasia</string>
+    <string name="formatNomeHeader">%1$s sua fantasia para o</string>
 </resources>

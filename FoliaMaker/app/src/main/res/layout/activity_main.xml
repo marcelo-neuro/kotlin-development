@@ -5,142 +5,331 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgorunds"
+    android:background="@drawable/background_yellow"
     tools:context=".MainActivity">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/header"
-    android:layout_alignParentTop="true">
-
-    <ImageView
+    <LinearLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo_foliamaker"
-        android:contentDescription="@string/logo_do_folia_maker"/>
+        android:layout_alignParentTop="true">
 
-</LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/descLogo"
+            android:src="@drawable/logo_foliamaker" />
 
-
+    </LinearLayout>
+    
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/header"
-        >
+        android:visibility="visible">
 
         <LinearLayout
             android:id="@+id/containerFormulario"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="@string/titleFino"
                 android:textAlignment="center"
-                android:textSize="20sp"
-                android:text="@string/crie_sua_fantasia_para_o"/>
+                android:textSize="20sp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:text="@string/titleBold"
                 android:textAlignment="center"
-                android:text="@string/carnaval_2025"/>
+                android:textSize="20sp"
+                android:textStyle="bold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginHorizontal="12dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_marginTop="@dimen/defMarging"
+                android:layout_marginHorizontal="@dimen/defMarging"
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/icSize"
+                    android:layout_height="@dimen/icSize"
                     android:src="@drawable/ic_user"/>
 
                 <EditText
-                    android:id="@+id/edNome"
+                    android:id="@+id/etNome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/digite_o_seu_nome"/>
+                    android:hint="@string/edNomeHint"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginHorizontal="12dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_marginTop="@dimen/defMarging"
+                android:layout_marginHorizontal="@dimen/defMarging"
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/icSize"
+                    android:layout_height="@dimen/icSize"
                     android:src="@drawable/ic_tamanho"/>
 
                 <Spinner
                     android:id="@+id/spTamanho"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:entries="@array/tamanhos"/>
+                    android:hint="@string/spTamanhoHint"
+                    android:entries="@array/spTamanhos"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginHorizontal="12dp"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_marginTop="@dimen/defMarging"
+                android:layout_marginHorizontal="@dimen/defMarging"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/icSize"
+                    android:layout_height="@dimen/icSize"
+                    android:src="@drawable/ic_mascara"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:textColor=""
-                    android:text="@string/cor_da_fantasia"/>
+                    android:text="@string/acessorioTv"
+                    android:layout_marginStart="@dimen/defMarging"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                
 
-                <Spinner
-                    android:id="@+id/spTamanho"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:entries="@array/tamanhos"/>
+
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cbChapeu"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/icSize"
+                    android:layout_marginHorizontal="@dimen/defMarging"
+                    android:text="@string/cbChapeu"/>
+
+                <CheckBox
+                    android:id="@+id/cbMascara"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/icSize"
+                    android:layout_marginHorizontal="@dimen/defMarging"
+                    android:text="@string/cbMascara"/>
+
+                <CheckBox
+                    android:id="@+id/cbColar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/icSize"
+                    android:layout_marginHorizontal="@dimen/defMarging"
+                    android:text="@string/cbColar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/defMarging"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/defMarging"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/icSize"
+                    android:layout_height="@dimen/icSize"
+                    android:src="@drawable/ic_abada"/>
+
+                <Spinner
+                    android:id="@+id/spCor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/spCorFantasia"
+                    android:entries="@array/spCores"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/defMarging"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/defMarging"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/icSize"
+                    android:layout_height="@dimen/icSize"
+                    android:src="@drawable/ic_maquiagem"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdMaquiagem"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/defMarging"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/defMarging"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbMaquiagemSim"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/icSize"
+                        android:text="@string/rbMaquiagemSim"/>
+
+                    <RadioButton
+                        android:id="@+id/rbMaquiagemNao"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/icSize"
+                        android:text="@string/rbMaquiagemNao"/>
+
+                </RadioGroup>
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/containerFantasia"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/defMarging"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txBrilho"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/defMarging"/>
+
+                <SeekBar
+                    android:id="@+id/slBrilho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:valueFrom="0.0"
+                    android:valueTo="100.0"
+                    android:value="20.0"
+                    app:thumbColor="#FFA500"
+                    app:trackColorActive="#FFA500"/>
+
+            </LinearLayout>
 
 
         </LinearLayout>
 
     </FrameLayout>
 
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/formatNomeHeader"
+                android:textAlignment="center"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titleBold"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_chapeu"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/defMarging"
+                android:src="@drawable/ic_mascara"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/defMarging"
+                android:src="@drawable/ic_maquiagem"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/defMarging"
+                android:src="@drawable/ic_colar"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="@dimen/defMarging"
+                android:src="@drawable/ic_tamanho"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        
+        
+    </FrameLayout>
+        
+    
     <Button
         android:id="@+id/btnCriar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:backgroundTint="@color/orange"
-        android:textAlignment="center"
-        android:text="@string/mostrar_fantasia"
+        android:text="@string/btnFantasia"
+        android:textStyle="bold"
         android:textSize="24sp"/>
-
-
 
 
 </RelativeLayout>
