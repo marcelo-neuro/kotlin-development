@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "titulo": "Mona Lisa",
+    "descricao": "Pintada por Leonardo da Vinci, é uma das obras mais icônicas do mundo, conhecida pelo sorriso enigmático da personagem.",
+    "imagem": "https://ceugaleria.com.br/galeria/wp-content/uploads/2024/03/monalisa.webp"
+  },
+  {
+    "id": 2,
+    "titulo": "A Noite Estrelada",
+    "descricao": "Obra de Vincent van Gogh retratando uma paisagem noturna com redemoinhos e uma vila sob um céu turbulento.",
+    "imagem": "https://www.papeiseparede.com.br/4692-thickbox_default/papel-de-parede-a-noite-estrelada-por-vincent-van-gogh.jpg.webp"
+  },
+  {
+    "id": 3,
+    "titulo": "O Grito",
+    "descricao": "Pintura expressionista de Edvard Munch que representa uma figura angustiada sob um céu flamejante.",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/f/f4/The_Scream.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "Guernica",
+    "descricao": "Pintura de Pablo Picasso que retrata os horrores da guerra após o bombardeio da cidade espanhola de Guernica.",
+    "imagem": "https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "A Criação de Adão",
+    "descricao": "Afresco de Michelangelo na Capela Sistina que mostra Deus dando vida a Adão com um toque.",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/7/73/God2-Sistine_Chapel.png"
+  },
+  {
+    "id": 6,
+    "titulo": "O Nascimento de Vênus",
+    "descricao": "Pintura de Sandro Botticelli que retrata a deusa Vênus emergindo do mar sobre uma concha.",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1200px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
+  },
+  {
+    "id": 7,
+    "titulo": "A Última Ceia",
+    "descricao": "Obra de Leonardo da Vinci representando Jesus e seus discípulos durante sua última refeição.",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg"
+  },
+  {
+    "id": 8,
+    "titulo": "O Jardim das Delícias Terrenas",
+    "descricao": "Tríptico do pintor Hieronymus Bosch que mostra o paraíso, a vida terrena e o inferno.",
+    "imagem": "https://mega.ibxk.com.br/2014/02/15/15102631605020.jpg"
+  },
+  {
+    "id": 9,
+    "titulo": "A Ronda Noturna",
+    "descricao": "Obra de Rembrandt mostrando a guarda cívica de Amsterdã em uma composição dinâmica e sombria.",
+    "imagem": "https://static.dw.com/image/58035051_1006.webp"
+  }
+]
