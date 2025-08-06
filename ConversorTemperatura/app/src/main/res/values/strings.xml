@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ConversorTemperatura</string>
+    <string name="titulo">Conversor de temperatura</string>
+    <string name="hint_temperatura">Digite a temperatura</string>
+    <string name="celsius_para_fahrenheit">Celsius para Fahrenheit</string>
+    <string name="fahrenheit_para_celsius">Fahrenheit para Celsius</string>
+    <string name="botao_converter">Converter</string>
+</resources>
